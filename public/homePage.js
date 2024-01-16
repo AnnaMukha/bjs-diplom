@@ -76,8 +76,6 @@ moneyManager.sendMoneyCallback = ({to, currency, amount}) => {
     favoritesWidget.clearTable();
     favoritesWidget.fillTable(response.data);
     moneyManager.updateUsersList(response.data);
-
-
   }
   })
 
@@ -110,4 +108,3 @@ moneyManager.sendMoneyCallback = ({to, currency, amount}) => {
     };
     ApiConnector.removeUserFromFavorites(id, callback);
   }; 
-  
